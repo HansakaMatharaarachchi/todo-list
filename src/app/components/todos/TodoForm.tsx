@@ -81,12 +81,12 @@ const TodoForm: React.FC<TodoFormProps> = ({
 			</Field>
 		</Form.Item>
 
-		<Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+		<Form.Item className="flex justify-end">
 			<Button
 				type="primary"
 				htmlType="submit"
 				disabled={isSubmitting}
-				className="w-full bg-primary hover:bg-primary-dark"
+				className="self-end bg-primary hover:bg-primary-dark"
 			>
 				Submit
 			</Button>
