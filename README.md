@@ -1,50 +1,82 @@
-# React + TypeScript + Vite
+# 🚀 React Todo List with User Authentication
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React application that provides a **Todo List** with basic **user authentication**. The project demonstrates how to manage user authentication using React's context and local state, and allows users to add, edit, delete, and mark todo items as complete/incomplete.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. **User Authentication**
+- **Sign Up**: Users can register with an email, password, and name.
+- **Login**: Users can log in using their registered email and password.
+- **Authentication State Management**: Managed with React Context.
+- **Form Validation**: Basic validation using **Formik** and **Yup**.
+- **Error Feedback**: Users are notified of success/failure during login/registration.
 
-## Expanding the ESLint configuration
+### 2. **Todo List**
+- **Add Todo**: Users can create new todo items by providing a title and description.
+- **Edit Todo**: Modify existing todo items.
+- **Delete Todo**: Remove items from the todo list.
+- **Toggle Completion**: Mark todos as completed or incomplete.
+- **Data Persistence**: Todos persist across page reloads using browser local storage.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 3. **Additional Features**
+- **Client-Side Routing**: **React Router** is used to separate authentication and todo pages.
+- **Responsive Design**: The app is optimized for both desktop and mobile.
+- **Clean UI**: Modern, clean design with user-friendly forms and validation feedback.
+  
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 📚 Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React**: Frontend framework
+- **React Context**: To manage state globally
+- **Formik**: For form state management
+- **Yup**: For validation schema
+- **React Router**: For navigation between pages
+- **Tailwind and Antd**: For responsive and clean UI styling
+- **LocalStorage**: For persisting todo data across sessions
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## ⚙️ Getting Started
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Follow these instructions to set up and run the project locally.
+
+### Prerequisites
+
+Ensure that you have the following installed:
+- [Node.js](https://nodejs.org/en/) (v14 or later)
+- npm (Node Package Manager) or yarn
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/HansakaMatharaarachchi/todo-list.git
+   cd todo-list
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+   Or, if you're using yarn:
+   ```bash
+   yarn install
+   ```
+
+3. **Run the application:**
+   ```bash
+   npm start
+   ```
+   Or for yarn:
+   ```bash
+   yarn start
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173/`.
+
+---
+
+By following this README, you should be able to get the project up and running easily ✨
+
+---
